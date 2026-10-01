@@ -1,0 +1,17 @@
+@import './nav-control';
+
+// Mesa de Ayuda TI - identidad provisional en el encabezado lateral.
+.brand-title-text {
+  margin-left: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: inherit;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (max-width: 991px) {
+  .brand-title-text {
+    display: none;
+  }
+}

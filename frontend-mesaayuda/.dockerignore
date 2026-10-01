@@ -1,0 +1,14 @@
+# .dockerignore - Fase 7.1.1
+# No copiar node_modules ni dist desde el host al contenedor
+
+node_modules
+dist
+.git
+.gitignore
+.vscode
+.idea
+*.log
+.env
+.env.local
+.env.*.local
+.DS_Store

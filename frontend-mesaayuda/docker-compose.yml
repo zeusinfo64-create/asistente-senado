@@ -1,0 +1,27 @@
+# docker-compose.yml - Mesa de Ayuda TI (Fase 7.1.1)
+# Solo frontend por ahora. Laravel, MySQL y otros servicios se agregarán posteriormente.
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mesa-ayuda-frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      # Montar código fuente para hot reload
+      - ./src:/app/src
+      - ./index.html:/app/index.html
+      - ./vite.config.js:/app/vite.config.js
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
+      - ./.env:/app/.env
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+      # URL de la API Laravel consumida por el navegador desde localhost:5173.
+      - VITE_API_URL=http://localhost:8000
+    stdin_open: true
+    tty: true
+    command: npm run dev

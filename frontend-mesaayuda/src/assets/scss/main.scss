@@ -1,0 +1,98 @@
+/*
+    Mesa de Ayuda TI
+
+    Table of Sass Contents
+
+    1. Abstracts
+        _bs-custom
+        _inheritance
+        _maps
+        _mixin
+        _variable
+
+    2. bootstrap
+        -Here goes all official bootstrap scss files
+
+    3. Global/Base
+        _color
+        _custom-grid
+        _fonts
+        _helper
+        _reset
+
+    4. layout
+        +footer
+        +header
+        +rtl
+        +sidebar
+        +theme
+        +typography
+        +version-dark
+        +version-transparent
+
+    5. Components
+        +forms
+        +tables
+        +uc
+        +ui
+        +widget
+
+    6. Pages
+        +page-auth
+        +page-error
+*/
+
+
+
+
+
+
+
+
+////////////////////
+// Abstracts
+////////////////////
+@import "./abstracts/abstracts";
+
+//bootstrap library scss files
+@import "./../vendor/bootstrap/scss/bootstrap.scss";
+
+
+
+////////////////////
+// Global
+////////////////////
+@import "./base/base";
+
+@import "./preloader";
+
+
+////////////////////
+// Components
+////////////////////
+@import "./layout/layout";
+
+
+////////////////////
+// Components
+////////////////////
+@import "./components/components";
+
+
+////////////////////
+// All pages
+////////////////////
+@import "./pages/pages";
+
+
+
+////////////////////
+// RTL
+////////////////////
+@import "./layout/rtl/rtl";
+
+
+////////////////////
+// Version Color
+////////////////////
+@import "./layout/version-dark/main";

@@ -1,0 +1,8 @@
+// Componentes visuales reutilizables
+// Se conservan: forms, tables, uc (ayudas), ui y widget.
+// Se eliminaron los grupos app, charts, map e ico por corresponder al demo del template.
+@import "./forms/forms";
+@import "./tables/table";
+@import "./uc/addons";
+@import "./ui/interfaces";
+@import "./widget/widgets";
